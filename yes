@@ -1,0 +1,77 @@
+using System;
+					
+public class Program
+{
+	public static void GameStart()
+	{
+		Console.WriteLine("\t\t\t\t Welcome To The Club Buddy!");
+		string Description = @"                 Это симулятор гачиста. 
+                 Здесь вы можете быть любым гачимучи-героем, каким захотите!";
+		Console.WriteLine(Description);
+	}
+	public static string Name()
+	{
+		string name = Console.ReadLine();
+		return name;
+	}
+	public static void ChooseYourGachist(int num)
+	{
+		if(num == 1)
+		{
+			Console.WriteLine("\t\t\t\t Это пока что консольное приложение. Думаю, что сделаю его десктопным и добавлю базу фоток и описаний разный гачимучи. \n\t\t\t\t -------------------------- \n\t\t\t\t -------------------------- ");
+		}
+		if(num == 2)
+		{
+			Console.WriteLine("\t\t\t\t Правильно, мужик, ты нажал 2, а это значит, что ты настоящий ♂dungeon master♂ \n\t\t\t\t -------------------------- \n\t\t\t\t --------------------------");
+		}
+		if(num == 3)
+		{
+			Console.WriteLine("\t\t\t\t Xа-ха-ха, малыш, ты нажал 3, а это значит, что ты ♂️fucking slaves♂️ \n\t\t\t\t -------------------------- \n\t\t\t\t --------------------------");
+		}
+		if(num == 4)
+		{
+			Console.WriteLine("\t\t\t\t М-у-ж-и-к, ты просто псих, ты нажал 4, а это значит, что тебе выпадает самый лютый из гачи.... Ты ♂️Данил Кручинин♂️ \n\t\t\t\t -------------------------- \n\t\t\t\t --------------------------");
+		}
+		if(num == 5)
+		{
+			Console.WriteLine("\t\t\t\t Тебе не повезло, сегодня ты обычный человек, никаких гачимучи \n\t\t\t\t -------------------------- \n\t\t\t\t --------------------------");
+		}
+		if(num == 6)
+		{
+			Console.WriteLine("\t\t\t\t Ты чё думал тут будут одни гачисты???? Сегодня ты ебанная шестёрка, ведь ты по-любому бондарь))) \n\t\t\t\t -------------------------- \n\t\t\t\t --------------------------");
+		}
+		if(num == 7)
+		{
+			Console.WriteLine("\t\t\t\t Сегодня тебе повезло, тебя будет оберегать ♂️Тимурка Рахметулин ака Битс♂️ \n\t\t\t\t -------------------------- \n\t\t\t\t --------------------------");
+		}
+		if(num == 8)
+		{
+			Console.WriteLine("\t\t\t\t Ахуенно, можешь завтра на пары не идти, ты реальный гачи-босс \n\t\t\t\t -------------------------- \n\t\t\t\t --------------------------");
+		}
+		if(num == 9)
+		{
+			Console.WriteLine("\t\t\t\t Ты выбрал монстра из мира гачи, покорителя всего и всех и его зовут......... ♂️Денис Новиков♂️ \n\t\t\t\t -------------------------- \n\t\t\t\t --------------------------");
+		}
+	}
+	public static void Main()
+	{
+		GameStart();
+		Console.Write("\t\t\t\t Дорогой друг, напиши своё имя: ");
+		string name = Name();
+		Console.WriteLine("\t\t\t\t" + " Привет, " + name + ", будущий гачист.");
+		Console.WriteLine("\t\t\t\t ----------------------------------");
+		int i = -1;
+		while(i != 0)
+		{
+			Console.Write("\t\t\t\t Нажми на любую цифру от 1 до 9 для выбора своего гачиста: ");
+			i = int.Parse(Console.ReadLine());
+			Console.WriteLine("\t\t\t\t -------------------------- \n\t\t\t\t --------------------------");
+			if(i == 0)Console.WriteLine("\t\t\t\t Ты нажал 0, а это означает, что ты устал выбирать всё, поэтому \n\t\t\t\t STOP!");
+			if(i <= -1 || i >= 10){Console.WriteLine("\t\t\t\t Ты ебать дурачок? BAN БЛЯТЬ."); break;}
+			ChooseYourGachist(i);
+		}
+		Console.WriteLine("\t\t\t\t Спасибо за участие в моей игре, буду пытаться воплоить это в десктоп с базой данныx. \n\t\t\t\t Всем удачи.");
+		Console.WriteLine("\t\t\t\t Написал код неповторимый cwbtfat");
+		
+	}
+}
